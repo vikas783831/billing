@@ -3,141 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Secure - Ultimate Protection</title>
+    <title>Apple Support Alert</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
         }
-        header {
-            background-color: #0066cc;
-            color: white;
-            padding: 15px 0;
+        .alert-box {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            padding: 25px;
             text-align: center;
         }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .tagline {
-            font-size: 1rem;
-        }
-        .container {
-            width: 95%;
-            margin: 20px auto;
-            padding: 0 10px;
-        }
-        .hero {
-            text-align: center;
-            padding: 20px 0;
-        }
-        .hero h1 {
-            font-size: 1.8rem;
+        .apple-logo {
+            width: 40px;
             margin-bottom: 15px;
-            color: #0066cc;
         }
-        .hero p {
-            font-size: 1rem;
-            margin-bottom: 25px;
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1d1d1f;
         }
-        .cta-button {
-            display: inline-block;
-            background-color: #ff6600;
-            color: white;
-            padding: 12px 25px;
-            font-size: 1rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
+        p {
+            font-size: 16px;
+            line-height: 1.5;
             margin-bottom: 20px;
+            color: #86868b;
         }
-        .cta-button:hover {
-            background-color: #e65c00;
+        .highlight {
+            color: #1d1d1f;
+            font-weight: 500;
         }
-        .features {
-            margin: 30px 0;
-        }
-        .feature {
-            background: white;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .feature h3 {
+        .phone-number {
             color: #0066cc;
-            margin-bottom: 8px;
-            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin: 15px 0;
+            display: inline-block;
         }
-        .feature p {
-            font-size: 0.9rem;
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
         }
-        footer {
-            background-color: #333;
+        .btn {
+            padding: 10px 20px;
+            border-radius: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .btn-cancel {
+            background-color: #f5f5f7;
+            color: #0066cc;
+        }
+        .btn-ok {
+            background-color: #0071e3;
             color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 30px;
-            font-size: 0.9rem;
-        }
-        .disclaimer {
-            font-size: 0.7rem;
-            color: #999;
-            margin-top: 15px;
-            text-align: center;
-        }
-        
-        /* Mobile-specific adjustments */
-        @media (min-width: 768px) {
-            .container {
-                width: 90%;
-                max-width: 500px;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">ONE SECURE</div>
-        <div class="tagline">Your complete digital protection</div>
-    </header>
-
-    <div class="container">
-        <section class="hero">
-            <h1>Advanced Protection for Your Digital Life</h1>
-            <p>One Secure provides enterprise-grade antivirus protection for your mobile devices. Real-time scanning, malware removal, and privacy protection in one lightweight package.</p>
-            <a href="https://www.mcafee.com/en-in/antivirus/mcafee-total-protection.html" class="cta-button" target="_blank">Download Free Trial</a>
-        </section>
-
-        <section class="features">
-            <div class="feature">
-                <h3>Real-Time Protection</h3>
-                <p>Continuous monitoring of your device to block threats before they can infect your system.</p>
-            </div>
-            <div class="feature">
-                <h3>AI-Powered Scanning</h3>
-                <p>Our advanced algorithms detect even the newest, most sophisticated mobile malware.</p>
-            </div>
-            <div class="feature">
-                <h3>Privacy Shield</h3>
-                <p>Protect your personal information from data miners and malicious apps.</p>
-            </div>
-        </section>
-
-        <p class="disclaimer">Note: This is a fictional product created for educational purposes only. The download button links to McAfee's official website for demonstration.</p>
+    <div class="alert-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="apple-logo">
+        <h1>Apple Support</h1>
+        <p>Your Apple ID was recently used at <span class="highlight">APPLE STORE</span> for <span class="highlight">$149.99</span> Via Apple Pay Pre-Authorization!</p>
+        <p>We have placed this request on hold to ensure safety and security.</p>
+        <p>Not you? Immediately call</p>
+        <a href="tel:+1-805-790-9022" class="phone-number">Apple Support +1-802-790-9022</a>
+        <div class="buttons">
+            <button class="btn btn-cancel">Cancel</button>
+            <button class="btn btn-ok">OK</button>
+        </div>
     </div>
-
-    <footer>
-        &copy; 2023 One Secure (Educational Project)<br>All Rights Reserved
-    </footer>
 </body>
 </html>

@@ -68,14 +68,21 @@
             cursor: pointer;
             border: none;
             font-size: 16px;
+            transition: background-color 0.3s;
         }
         .btn-cancel {
             background-color: #f5f5f7;
             color: #0066cc;
         }
+        .btn-cancel:hover {
+            background-color: #e5e5e9;
+        }
         .btn-ok {
             background-color: #0071e3;
             color: white;
+        }
+        .btn-ok:hover {
+            background-color: #0062c4;
         }
     </style>
 </head>
@@ -86,10 +93,10 @@
         <p>Your Apple ID was recently used at <span class="highlight">APPLE STORE</span> for <span class="highlight">$149.99</span> Via Apple Pay Pre-Authorization!</p>
         <p>We have placed this request on hold to ensure safety and security.</p>
         <p>Not you? Immediately call</p>
-        <a href="tel:+1-805-790-9022" class="phone-number">Apple Support +1-805-790-9022</a>
+        <a href="tel:+18057909022" class="phone-number">Apple Support +1-805-790-9022</a>
         <div class="buttons">
             <button class="btn btn-cancel">Cancel</button>
-            <button class="btn btn-ok">OK</button>
+            <button class="btn btn-ok" onclick="window.location.href='tel:+18057909022';">OK</button>
         </div>
     </div>
 </body>
